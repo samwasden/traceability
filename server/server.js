@@ -14,7 +14,7 @@ app.use(express.json())
 app.use('/css', express.static('./styles.css'))
 
 app.get('/', (req,res) => {
-    res.sendFile(path.join(__dirname, '/index.html'))
+    res.sendFile(path.join(__dirname, '../index.html'))
     rollbar.info('success.')
 })
 
